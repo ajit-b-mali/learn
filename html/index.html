@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html land="eg">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="prev" href="http://stackoverflow.com/documentation/java/topics">
+    <link rel="next" href="http://stackoverflow.com/documentation/css/topics">
+    <link rel="apple-touch-icon" href="favicon.png">
+</head>
+
+<body>
+    <h1>Hello, World!</h1>
+    <!-- <h1>Hello, World!</h1>
+        <p>This is a <mark>simple</mark> paragraph.</p>
+        <p>
+            <strong>Bold with strong</strong>
+            <br>
+            <b>Bold with b</b>
+        </p>
+        <p>I like to write <abbr title="Hypertext Markup Language">HTML</abbr>!</p>
+        <p>Text is:     <ins>inserted</ins></p>
+        <p>Text is:     <del>deleted</del></p>
+        <p>Text is:     <s>striked</s></p>
+        <p>Text is:     <u>underlined</u></p>
+        <p>Text is:     <sub>subscript</sub></p>
+        <p>Text is:     <sup>superscript</sup></p>
+        <a href="http://example.com/" rel="external">example site</a>
+
+        <p id="Topic">Go here</p>
+        <a href="#Topic" rel="internal">hey</a>
+        <a href="tel:11234567890">Call us</a>
+        <a href="mailto:example@example.com">Send email</a>
+        <a href="mailto:example@example.com?cc=john@example.com&bcc=jane@example.com">Send email</a>
+        <a href="mailto:example@example.com?subject=Example+subject&body=Message+text">Send email</a> -->
+
+    <!-- <ol start="8" reversed type="A">
+        <li>Item</li>
+        <li>Some Other Item</li>
+        <li value="4">A Reset Item</li>
+        <li>Another Item</li>
+        <li>Yet Another Item</li>
+    </ol>
+    <<ol>
+        <li>Hello, list!</li>
+        <li> nested
+            <ul>
+                <li>Hello, nested list!</li>
+                <li>Hello, nested list!</li>
+                <li>Hello, nested list!</li>
+            </ul>
+        </li>
+        <li>Hello, list!</li>
+    </ol>
+    <dl>
+        <dt>name 1</dt>
+        <dt>name 2</dt>
+        <dd>value for 1 and 2</dd>
+        <dt>name 3</dt>
+        <dd>value for 3</dd>
+        <dd>value for 3</dd>
+    </dl> -->
+
+    <table border="2">
+        <tr>
+            <td>row 1 col 1</td>
+            <td>row 1 col 2</td>
+            <td>row 1 col 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">This second row spans all three columns</td>
+        </tr>
+        <tr>
+            <td rowspan="0">This cell spans two rows</td>
+            <td>row 3 col 2</td>
+            <td>row 3 col 3</td>
+        </tr>
+        <tr>
+            <td>row 4 col 2</td>
+            <td>row 4 col 3</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Table Title</caption> <!--| caption is the first child of table |-->
+        <colgroup>
+            <col id="MySpecialColumn" />
+            <col />
+        </colgroup>
+        <colgroup>
+            <col class="CoolColumn" />
+            <col class="NeatColumn" span="2" />
+        </colgroup>
+        <thead> <!--======================| thead is after caption |-->
+            <tr>
+                <th>Header content 1</th>
+                <th>Header content 2</th>
+            </tr>
+        </thead>
+        <tbody> <!--======================| tbody is after thead |-->
+            <tr>
+                <td>Body content 1</td>
+                <td>Body content 2</td>
+            </tr>
+        </tbody>
+
+        <tfoot><!--| tfoot can be placed before or after tbody, but not in a group of tbody. |-->
+            <!--| Regardless where tfoot is in markup, it is rendered at the bottom. |-->
+            <tr>
+                <td>Footer content 1</td>
+                <td>Footer content 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <th scope="col">Column Heading 1</th>
+                <th scope="col">Column Heading 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Row Heading 1</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Row Heading 1</th>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Use an HTML comment to nullify the newline character below: -->
+    <a href="#">I hope there will be no extra whitespace after this!</a><!----><button>Foo</button>
+    <hr>
+    <!-- Without it, you can notice a small formatting difference: -->
+    <a href="#">I hope there will be no extra whitespace after this!</a>
+    <button>Foo</button>
+
+    <label>
+        <input type="checkbox" name="Cats">
+        I like Cats!
+    </label>
+
+
+    <form id="my-form" action="/login" method="POST">
+
+        <input id="username" type="text" name="username" />
+        <label for="pass">Password:</label>
+        <input id="pass" type="password" name="pass" />
+        <input type="submit" name="submit" />
+    </form>
+    <label for="username" form="my-form">Username:</label><br><br>
+
+    <!--form1 will collect the values of in1 and in2 on 'input' event.-->
+    <!--out1 value will be the sum of in1 and in2 values.-->
+    <form id="form1" name="form1" oninput="out1.value = parseInt(in1.value, 10) + parseInt(in2.value,
+ 10)">
+        <fieldset>
+            <legend>Output Example</legend>
+            <input type="number" id="in1" name="in1" value="0">
+            <br />
+            +
+            <input type="number" id="in2" name="in2" value="0">
+        </fieldset>
+    </form>
+    <!--[for] attribute enables out1 to display calculations for in1 and in2.-->
+    <!--[form] attribute designates form1 as the form owner of out1 even if it isn't a descendant.-->
+    <output name="out1" for="in1 in2" form="form1">0</output><br><br><br>
+    <progress max="100" value="20">
+        <div class="progress-bar">
+            <span style="width: 20%;">Progress: 20%</span>
+        </div>
+    </progress>
+    <select name="" size="0" multiple>
+        <option value="1" selected>One</option>
+        <option value="2" selected>Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+    </select><br>
+    <select name="">
+        <option value="milk" disabled>Milk</option>
+        <optgroup label="Fruits">
+            <option value="banana">Bananas</option>
+            <option value="strawberry">Strawberries</option>
+        </optgroup>
+        <optgroup label="Vegetables" disabled>
+            <option value="carrot">Carrots</option>
+            <option value="zucchini">Zucchini</option>
+        </optgroup>
+    </select>
+    <input list="Languages">
+    <datalist id="Languages">
+        <option value="PHP">
+        <option value="Perl">
+        <option value="Python">
+        <option value="Ruby">
+        <option value="C+">
+    </datalist><br>
+    <iframe srcdoc="<p>IFrames are cool!</p>"></iframe>
+    <p lang="en" title="An English paragraph">
+        <span lang="de" title="A German sentence">Hallo Welt!</span>
+    </p>
+    <svg class="attention" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 1000 1000">
+        <path id="attention" d="m571,767l0,-106q0,-8,-5,-13t-12,-5l-108,0q-7,0,-12,5t-5,13l0,106q0,8,5,13t12,6l108,0q7,0,12,-6t5
+,-13Zm-1,-208l10,-257q0,-6,-5,-10q-7,-6,-14,-6l-122,0q-7,0,-14,6q-5,4,-5,12l9,255q0,5,6,9t13,3l103,
+0q8,0,13,-3t6,-9Zm-7,-522l428,786q20,35,-1,70q-10,17,-26,26t-35,10l-858,0q-18,0,-35,-10t-26,-26q-21
+,-35,-1,-70l429,-786q9,-17,26,-27t36,-10t36,10t27,27Z" />
+    </svg>
+</body>
+
+</html>

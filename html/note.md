@@ -2069,3 +2069,74 @@ Want me to:
 
 Just say the word!
 
+16.2 Non-conforming features
+Elements in the following list are entirely obsolete, and must not be used by authors:
+
+applet
+Use embed or object instead.
+
+acronym
+Use abbr instead.
+
+bgsound
+Use audio instead.
+
+dir
+Use ul instead.
+
+frame
+frameset
+noframes
+Either use iframe and CSS instead, or use server-side includes to generate complete pages with the various invariant parts merged in.
+
+isindex
+Use an explicit form and text control combination instead.
+
+keygen
+For enterprise device management use cases, use native on-device management capabilities.
+
+For certificate enrollment use cases, use the Web Cryptography API to generate a keypair for the certificate, and then export the certificate and key to allow the user to install them manually. [WEBCRYPTO]
+
+listing
+Use pre and code instead.
+
+menuitem
+To implement a custom context menu, use script to handle the contextmenu event.
+
+nextid
+Use GUIDs instead.
+
+noembed
+Use object instead of embed when fallback is necessary.
+
+param
+Use the data attribute of the object element to set the URL of the external resource.
+
+plaintext
+Use the "text/plain" MIME type instead.
+
+rb
+rtc
+Providing the ruby base directly inside the ruby element or using nested ruby elements is sufficient.
+
+strike
+Use del instead if the element is marking an edit, otherwise use s instead.
+
+xmp
+Use pre and code instead, and escape "<" and "&" characters as "&lt;" and "&amp;" respectively.
+
+basefont
+big
+blink
+center
+font
+marquee
+multicol
+nobr
+spacer
+tt
+Use appropriate elements or CSS instead.
+
+Where the tt element would have been used for marking up keyboard input, consider the kbd element; for variables, consider the var element; for computer code, consider the code element; and for computer output, consider the samp element.
+
+Similarly, if the big element is being used to denote a heading, consider using the h1 element; if it is being used for marking up important passages, consider the strong element; and if it is being used for highlighting text for reference purposes, consider the mark element.
