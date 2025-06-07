@@ -43,6 +43,15 @@
 - boolean attribute?
 - [defense in depth](https://en.wikipedia.org/wiki/Defense_in_depth_%28computing%29)?
 - applet, base, basefont, br, frame, frameset, hr, iframe, meta, param, script no lang="?" ?
+- style svg in css? morph svg?
+- robot.txt?
+- Open Graph odp?
+- only refreshing a portion of a page?
+- theme color? not working?
+- contextmenu?
+- draggable?
+- HTML cache? `<html manifest="index.appcache">`?
+
 ![alt text](./assets/image.png)
 ![alt text](./assets/image-1.png)
 ![alt text](image.png)
@@ -235,6 +244,92 @@
 <a href="different_webpage.html" target="myIframe">Change the Iframe content to different_webpage.html</a>
 ```
 
+- `<img>` does not allow you to style the SVG using CSS or manipulate it using JavaScript.
+- `<object>` directly imports the SVG into the document and therefore it can be manipulated using Javascript and CSS.
+- `<object type="image/svg+xml" data="attention.svg" width="50" height="50">`
+- can use backgroud-imgae: url() with *.svg or data url;
+
+## Meta
+
+```html
+<meta name="application-name" content="OpenStreetMap">
+<meta name="author" content="Your Name">
+<meta name="description" content="Page Description">
+<meta name="generator" content="HTML Generator 1.42">
+<meta name="keywords" content="Keyword1, Keyword2">
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> <!-- HTML 4.01 -->
+<meta name="robots" content="noindex/all/nofollow/follow/none/noarchive/nocache/nosnippet/noodp/notranslate/noimageindex/unavailable_after [RFC-850 date/time]">
+
+<!-- Social Media -->
+<!-- Facebook open graph -->
+<meta property="fb:app_id" content="123456789">
+<meta property="og:url" content="https://example.com/page.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Content Title">
+<meta property="og:image" content="https://example.com/image.jpg">
+<meta property="og:description" content="Description Here">
+<meta property="og:site_name" content="Site Name">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="">
+<!-- Facebook: https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<!-- Open Graph: http://ogp.me/ -->
+
+<!-- Instant Article -->
+<meta charset="utf-8">
+<meta property="op:markup_version" content="v1.0">
+<!-- The URL of the web version of your article -->
+<link rel="canonical" href="http://example.com/article.html">
+<!-- The style to be used for this article -->
+<meta property="fb:article_style" content="myarticlestyle">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@site_account">
+<meta name="twitter:creator" content="@individual_account">
+<meta name="twitter:url" content="https://example.com/page.html">
+<meta name="twitter:title" content="Content Title">
+<meta name="twitter:description" content="Content description less than 200 characters">
+<meta name="twitter:image" content="https://example.com/image.jpg">
+
+<!-- Google+ -->
+<link href="https://plus.google.com/+YourPage" rel="publisher">
+<meta itemprop="name" content="Content Title">
+<meta itemprop="description" content="Content description less than 200 characters">
+<meta itemprop="image" content="https://example.com/image.jpg">
+
+<!-- Mobile layout control -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- other content[ width=device-width/x-px, height=device-height/x-px, initial-scale=1.0, minimum-scale=1.0, maximum-scale-1.0, user-scalable=yes/no ] -->
+
+<!-- auto refresh after 5 seconds, don't use -->
+<meta http-equiv="refresh" content="5">
+
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="refresh" content="5;url=https://www.example.com/" />
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="black">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+```
+
+## global attribute
+
+- class
+- contenteditable
+- contextmenu
+- dir
+- draggable
+- hidden
+- id
+- lang
+- spellcheck
+- style
+- tabindex
+- title
+- translate
 
 # TAG LIST
 
@@ -289,7 +384,7 @@
 - picture
 - source media
 - input
-- div
+- div tabindex="negative/0/positive"
 - span
 - nav role="navigation"
 - article
@@ -316,6 +411,13 @@
 - optgroup disabled
 - embed type src width height
 - iframe name width height src srcdoc sandbox="allow-scripts|allow-forms|allow-same-origin|allow-top-navigation" allowfullscreen
-- 
-
+- object
+- svg
+- path
+- canvas
+- meta name content http-equiv
+- pre code
+- q cite
+- blockquote cite
+- cite
 
