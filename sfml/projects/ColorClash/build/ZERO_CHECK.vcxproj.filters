@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dell\OneDrive\Desktop\cpp\projects\learn_sfml\projects\ColorClash\build\CMakeFiles\6cb3a8325e996b0b58a6c03481ce44ca\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5129422B-7D4C-3D95-9471-F4A4700766AE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

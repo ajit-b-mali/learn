@@ -1,0 +1,3 @@
+C:/Users/dell/OneDrive/Desktop/cpp/projects/learn_sfml/projects/ColorClash/build/CMakeFiles/app.dir
+C:/Users/dell/OneDrive/Desktop/cpp/projects/learn_sfml/projects/ColorClash/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/dell/OneDrive/Desktop/cpp/projects/learn_sfml/projects/ColorClash/build/CMakeFiles/ZERO_CHECK.dir

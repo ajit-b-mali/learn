@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Sticky footer -->
+    <!-- <style>
+        html,
+        body {
+            height: 100%;
+            margin-block: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1 0 auto; /* Include `0 auto` for best browser compatibility. */
+        }
+
+        .header,
+        .footer {
+            background-color: grey;
+            color: white;
+            flex: none;
+        }
+    </style>
+    <div class="header">
+        <h2>Header</h2>
+    </div>
+    <div class="content">
+        <h1>Content</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+            Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis
+            ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia
+            arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Curabitur sodales ligula in libero. </p>
+    </div>
+    <div class="footer">
+        <h4>Footer</h4>
+    </div> -->
+    <!-- ############################################### -->
+
+    <!-- Optimally fit elements to their container -->
+    <!-- <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            background-color: #000;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: stretch;
+        }
+
+        .flex-item {
+            background-color: #ccf;
+            margin: 0.1em;
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 200px; /* or % could be used to ensure a specific layout */
+        }
+    </style>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div> -->
+    <!-- ############################################### -->
+    <!-- Holy Grail Layout using Flexbox -->
+    <!-- <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            flex: 0 0 50px;
+        }
+
+        .content-body {
+            flex: 1 1 auto;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content-body .content {
+            flex: 1 1 auto;
+            overflow: auto;
+        }
+
+        .content-body .sidenav {
+            order: -1;
+            flex: 0 0 100px;
+            overflow: auto;
+        }
+
+        .content-body .ads {
+            flex: 0 0 100px;
+            overflow: auto;
+        }
+
+        .footer {
+            flex: 0 0 50px;
+        }
+    </style>
+    <div class="container">
+        <header class="header">Header</header>
+        <div class="content-body">
+            <main class="content">Content</main>
+            <nav class="sidenav">Nav</nav>
+            <aside class="ads">Ads</aside>
+        </div>
+        <footer class="footer">Footer</footer>
+    </div> -->
+    <!-- ############################################### -->
+
+    <!-- Perfectly aligned buttons inside cards withflexbox -->
+    <!-- <style>
+        .cards {
+            display: flex;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            margin: 10px 10px;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            height: 40px;
+            background: #fff;
+            padding: 0 40px;
+            border: 1px solid #000;
+        }
+
+        p:last-child {
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+    <div class="cards">
+        <div class="card">
+            <p>Lorem ipsum Magna proident ex anim dolor ullamco pariatur reprehenderit culpa esse enim
+                mollit labore dolore voluptate ullamco et ut sed qui minim.</p>
+            <p><button>Action</button></p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum Magna proident ex anim dolor ullamco pariatur reprehenderit culpa esse enim
+                mollit labore dolore voluptate ullamco et ut sed qui minim.</p>
+            <p>Lorem ipsum Magna proident ex anim dolor ullamco pariatur reprehenderit culpa esse enim
+                mollit labore dolore voluptate ullamco et ut sed qui minim.</p>
+            <p>Lorem ipsum Magna proident ex anim dolor ullamco pariatur reprehenderit culpa esse enim
+                mollit labore dolore voluptate ullamco et ut sed qui minim.</p>
+            <p>Lorem ipsum Magna proident ex anim dolor ullamco pariatur reprehenderit culpa esse enim
+                mollit labore dolore voluptate ullamco et ut sed qui minim.</p>
+            <p><button>Action</button></p>
+        </div>
+    </div> -->
+    <!-- ############################################### -->
+    
+    <!-- Same height on nested containers -->
+    <style>
+        .container {
+            display: flex;
+            align-items: stretch;
+        }
+    </style>
+    <div class="container">
+        <div style="background-color: red">
+            Some <br />
+            data <br />
+            to make<br />
+            a height <br />
+        </div>
+        <div style="background-color: blue">
+            Fewer <br />
+            lines <br />
+        </div>
+    </div>
+    <!-- ############################################### -->
+
+</body>
+
+</html>

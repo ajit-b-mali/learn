@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.10)
+project(learnCMake)
+
+if(WIN32)
+    message(STATUS "Compiling on Windows")
+elseif(APPLE)
+    message(STATUS "Compiling on macOS")
+elseif(UNIX)
+    message(STATUS "Compiling on Linux")
+else()
+    message(STATUS "Compiling on an unknown OS")
+endif()
+
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(SOURCES main.cpp)
+
+add_subdirectory(math)
+add_executable(cmake_basic ${SOURCES})
+target_link_libraries(cmake_basic PRIVATE math_library)

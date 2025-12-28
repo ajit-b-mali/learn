@@ -1,0 +1,3 @@
+C:/Users/dell/OneDrive/Desktop/cpp/projects/learn_sfml/projects/AssetManager/build/CMakeFiles/app.dir
+C:/Users/dell/OneDrive/Desktop/cpp/projects/learn_sfml/projects/AssetManager/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/dell/OneDrive/Desktop/cpp/projects/learn_sfml/projects/AssetManager/build/CMakeFiles/ZERO_CHECK.dir

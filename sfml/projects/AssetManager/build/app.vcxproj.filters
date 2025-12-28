@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\dell\OneDrive\Desktop\cpp\projects\learn_sfml\projects\AssetManager\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dell\OneDrive\Desktop\cpp\projects\learn_sfml\projects\AssetManager\src\AssetManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\dell\OneDrive\Desktop\cpp\projects\learn_sfml\projects\AssetManager\include\AssetManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dell\OneDrive\Desktop\cpp\projects\learn_sfml\projects\AssetManager\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C580058D-C926-3233-8749-7F40F6728702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F71DD7F9-0FDB-33C6-9786-5B12EC50B819}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

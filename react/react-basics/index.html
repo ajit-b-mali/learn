@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div>Outside of react</div>
+    <div class="js-container"></div>
+
+    <script>console.log("Hello:");</script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/supersimpledev/external-library.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+        const button = <button>Click</button>;
+        const div = (
+            // instead of special <div> wrapper we can use <></>
+            // {} used to insert JavaScript in JSX
+            <>
+                <button>Hello</button>
+                <p>paragraph of text { 2 + 2 }</p>
+            </>
+        );
+
+        const container = document.querySelector('.js-container');
+        // creates a root element where react do its stuffs
+        // can not render multiple elements
+        ReactDOM.createRoot(container).render(div);
+    </script>
+  </body>
+</html>
