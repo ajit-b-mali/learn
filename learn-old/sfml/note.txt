@@ -1,0 +1,76 @@
+Following "SFML Game Development" a book by Laurent Gomila
+
+<---- Questions ---->
+
+- zlib/libpng license ?
+- strings/streams in cpp ?
+- STL ?
+- polymorphism ?
+- Multimedia vs Non-multimedia resources
+- Non-multimedia - scripts that describe the in-game world, menu content, artificial intelligence, configuration files ?
+- Configuration file containing user settings such as the screen resolution and the music volume ?
+- glyph ?
+
+<---- Types     ---->
+
+sf::RenderWindow ->
+sf::VideoMode ->
+sf::Event -> 
+sf::Color ->
+sf::Keyboard ->
+sf::Vector2f ->
+sf::Time ->
+sf::Clock ->
+sf::Texture ->
+sf::Sprite ->
+sf::Text ->
+sf::Font ->
+sf::Image ->
+sf::Shader ->
+sf::SoundBuffer ->
+sf::Sound ->
+sf::Music ->
+sf::circleShape ->
+
+<---- Functions ---->
+sf::sleep() vs sf::RenderWindow::setFrameLimit()
+sf::seconds()
+sf::...::loadFromX vs sf::openFromX
+sf::...::move
+sf::...::setPosition
+sf::CircleShape::setRadius
+sf::...::setFillColor
+
+<---- Snippets  ---->
+
+<---- Other     ---->
+
+- SFML -- Simple and Fast Multimedia Library
+- Five modules
+	1. System -- Core module, provide 2D and 3D vector classes, clocks, threads, unicode strings, etc
+	2. Window -- Create application windows, collect user inputs
+	3. Graphics -- 2D rendering, images, texts, shapes, colors
+	4. Audio -- For sound, load music
+	5. Network -- send data over LAN or the Internet, work with protocols (like HTTP,FTP)
+- Learn Vector alegebra for games
+- Time handling and Frame updates
+	- Frame Independent Movement
+	- Fixed Time Steps
+	- Interpolations between two states to smoothen the game flow -> http://gafferongames.com/game-physics/fix-your-timestep
+	- Vertical synchronization
+- File path are related to working direectories
+- Real time rendering
+- Render-on=demand
+- Double Buffering
+- Shaders -- sfml suppports only vertex and fragment
+	bloom shader -> amplifies bright parts of the scene
+	toon shader -> makes objects look like in a cartoon
+	blur effect -> simulates flickering hot air
+- Acquiring, releasing, and accessing resources
+
+<---- To Do ---->
+- snake game
+- pacman
+
+
+

@@ -1,0 +1,19 @@
+- list of 3rd party packages used
+    1. nodemon -- :)
+		- auto restart server after changes
+		- it is a utility tool for dev
+		- global uses -- `nodemon index.js` -- only work if nodemon installed globally
+		- local uses -- "scripts.start": "nodemon index.js" and `npm start`
+	
+	2. Express.js -- :)
+		- see section-5
+
+- list of 3rrd party packages not used
+	1. Adonis.js
+	2. Koa
+	3. Sails.js
+	4. body-parser
+
+
+-- NOTE --> :) -- indicate like
+

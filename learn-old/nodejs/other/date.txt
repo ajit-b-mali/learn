@@ -1,0 +1,11 @@
+<-- NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno) by Maximilian Schwarzmuller -->
+
+day 00: DD-MM-YYYY -- section 00: 00 -> 00
+day 01: 02-11-2024 -- Index & section 01
+day 02: 03-11-2024 -- section 02
+day 03: 04-11-2024 -- section 03 - 025 -> 032
+day 04: 05-11-2024 -- section 03 - 033 -> 034
+day 05: 06-11-2024 -- section 03 - 035 -> 041
+day 06: 15-11-2024 -- section 04
+day 07: 18-11-2024 -- section 05
+

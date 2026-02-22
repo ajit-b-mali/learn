@@ -1,0 +1,68 @@
+----------------------------------------------------------------
+Chapter 1: Making a Game Tick
+----------------------------------------------------------------
+	- Introduction SFML
+		Downloading and installation
+		A minimal example
+	- A few notes on C++
+	- Developing the first game
+		The Game class
+	- Game Loops and frames
+		Input over several frames
+		Vector algebra
+		Frame-independent movement
+		Fixed time steps
+		Other techniques related to frame rates
+	- Displaying sprites on the screen
+		File paths and working directories
+		Real-time rendering
+		Adapting the code
+	- Summary
+----------------------------------------------------------------
+Chapter 2: Keeping Track of Your Textures - Resource Management -- incomplete
+----------------------------------------------------------------
+	- Defining resources
+	- Resources in SFML
+		Textures
+		Images
+		Fonts
+		Shaders
+		Sound buffers
+		Music
+	- A typical use case
+		Graphics
+		Audio
+		Acquiring, releasing, and accessing resources
+	- An automated approach
+		Finding an appropriate container
+		Loading from files
+		Accessing the textures
+	- Error handling
+		Boolean return values
+		Throwing exceptions
+		Assertions
+	- Generalizing the approach
+		Compatibility with sf::Music
+		A special case - sf::Shader
+	- Summary
+----------------------------------------------------------------
+Chapter 3: Forge of the Gods - Shaping Our World -- incomplete
+----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

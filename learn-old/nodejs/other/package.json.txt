@@ -1,0 +1,22 @@
+- what is license and its type ?
+- what is ISC ?
+
+here are all package.json related notes
+
+{
+	"name": "project-name",			// can not be a existing in module name
+	"version": "1.0.0",				// current version of project
+	"description": "desctiption of project",
+	"main": "index.js",				// entry point of project
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1", // default
+		"start": "node index.js",	// used for `npm start`
+		"start-app": "commands",	// custom script
+	},
+	"author": "owners-name",
+	"license": "ISC",				// default,
+	"devDependencies": {			// developement dependencie s
+		"package-name": "version"	// eg. "^1.18.3" -> ^ -- pick latest version for re-install 
+	}
+}
+
