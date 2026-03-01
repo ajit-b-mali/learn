@@ -1,4 +1,4 @@
-# Datacamp
+# DataCamp
 
 ## Introduction to Git
 
@@ -73,8 +73,11 @@ Why use version control?
     - see ![alt text](conflict-syntax.png)
     - avoid editing the same lines of code in different branches to minimize the chances of merge conflicts. Prvention is better than cure.
 
-18. Remote repository: a version of the repository that is hosted on a server, allowing for collaboration and sharing of code with others. Remote repositories can be accessed and updated using Git commands, allowing multiple developers to work on the same codebase from different locations.
+18. Remote repository: a version of the repository that is hosted on a server, allowing for collaboration and sharing of code with others. Remote repositories can be accessed and updated using Git commands, allowing multiple developers to work on the same codebase from different locations. Everything is backed up.
 19. Local repository: a version of the repository that is stored on your local machine, allowing you to work on the codebase without needing an internet connection. Changes made in the local repository can be staged and committed, and then pushed to a remote repository when you are ready to share your changes with others.
+20. Clone: Repo copies on our local computer = local remotes. Git remembers where the original remote was by storing a remoter **tag** (origin) in the new repo's configuration
+21. Push: Local to Remote
+22. Pull vs Fetch: Remote to local
 
 ### How git stores data`
 
@@ -148,7 +151,21 @@ see: ![alt text](commit-structure.png)
 - `git merge <source_branch>`: Merge the specified source branch into the current branch, combining the changes from both branches. This is a way to integrate changes from one branch into another, allowing you to bring new features or updates into the main branch when they are ready.
   - `git merge <source_branch> <source_branch>`: merger from another branch.
   - `git merge --no-ff <source_branch>`!: Perform a merge that creates a new commit even if the merge could be resolved with a fast-forward. This is useful for preserving the history of the source branch and making it clear that a merge occurred.
-- `git push`: Push committed changes to a remote repository
+  - `git merge <remote tag>`: Perfom merge on remote main and local main
+- `git clone`: Making a copy of a repo, the remote is named as origin
+  - `git cloe /path/to/project/repo`
+  - `git clone /path/to/project/repo new-repo`: Clone and name
+  - `git clone URL`: Cloning cloud repo
+- `git remote`: list remotes
+  - `git remote -v` : list remotes verbose
+  - `git remote add name URL`: add custom remote to repo: use ful when adding remote later
+- `git fetch origin`: Fetch from the origin remote, Fetches all remote branches, Doesn't merge the contents into local repo.
+  - `git fetch origin main`: Fetch only from the single branch
+- `git pull origin`: fetch default branch from remote and merge in current branch
+  - `git pull origin dev`: Specify the branch name. And merger in current branch(switch before pull), we can not pull if we have local changes.
+  - `git pull --no-edit origin main`: Pull in recursive merge opens a notepad to avoid that this is used, not recommended.
+- `git push origin main`: Push local main to remote origin, can ot push till saving work, can not push if remote is ahead.
+  - `git push origin hotfix(a new branch)`: Push a branch and create on remote if not exist
 
 ## Intermediate Git
 
@@ -168,3 +185,7 @@ see: ![alt text](commit-structure.png)
 - How to undo a commit that has already been pushed to a remote repository?
 - Types of merge?
 - PR, issue, tickets?
+- What are the uses of adding multiple remote
+- pull vs fetch
+- fastforward merge vs recursive merge
+- how to close command like in nvim
